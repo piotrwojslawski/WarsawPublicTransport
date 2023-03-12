@@ -3,7 +3,7 @@
 This project aims to gather precise arrival timings for both buses and trams at every stop located in Warsaw and compute the delays for buses. The project is divided into two scripts:
 
 # 1. Timetable script.ipynb
-The primary objective of this script is to gather accurate arrival time data. It collects information about all the stops in Warsaw through the API access point (https://api.um.warszawa.pl/).\
+The primary objective of this script is to gather accurate arrival time data. It collects information about all the stops in Warsaw through the API access point (https://api.um.warszawa.pl/). \
 In the first stage, the script collects data of all stops in Warsaw. This data includes stop number (zespol), stop label (slupek), longitude (dlug_geo), and latitude (szer_geo).\
 At the second stage, the script sends a request to the API for each stop number, stop label, and line number to collect accurate arrival time data. Using this information, it generates a timetable DataFrame, which includes:
 - fleet number (brygada)
