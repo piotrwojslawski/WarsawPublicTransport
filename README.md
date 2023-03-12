@@ -7,7 +7,7 @@ The primary objective of this script is to gather accurate arrival time data. It
 In the first stage, the script collects data of all stops in Warsaw. This data includes stop number (zespol), stop label (slupek), longitude (dlug_geo), and latitude (szer_geo).\
 At the second stage, the script sends a request to the API for each stop number, stop label, and line number to collect accurate arrival time data. Using this information, it generates a timetable DataFrame, which includes fleet number (brygada), time (czas), stop name (stop_name), stop number (stop_id), stop label (bus_stop_nr), line number (line), longitude (Lon), and latitude (Lat). Finally, it saves this DataFrame as a timetable.csv file, which is available in the repository.
 
-    ![image](https://user-images.githubusercontent.com/55345644/224540984-e65083ca-9660-40f1-a671-bfcad838906f.png)
+    ![image](https://user-images.githubusercontent.com/55345644/224541086-0630a9d2-3eec-4061-bbfa-5a6353f8f98f.png)
 
 
 # 2. Delays script.ipynb
@@ -21,6 +21,7 @@ Finally, the script generates a DataFrame that includes fleet number (brygada), 
 
 Final information displayed on the chart.
 
-    ![image](https://user-images.githubusercontent.com/55345644/224541045-c1d22c91-c484-4c41-b438-ae4219bd3b3d.png)
+    ![image](https://user-images.githubusercontent.com/55345644/224541108-19d4d4d1-f924-460c-bead-fd3869e6efb3.png)
+
 
 
