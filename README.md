@@ -27,12 +27,18 @@ The objective of this script is to compute bus delays in Warsaw. The delays are 
 
 Using timetable.csv file and real-time data on the current location of buses, the script calculates the delay in minutes for each bus. The delay is determined by comparing the expected arrival time of a bus at a particular stop, as provided by the timetable.csv file, with the actual arrival time of the bus at that stop, as obtained from the real-time data.\
 Finally, the script generates a DataFrame that includes:
-- fleet number (brygada)
-- line number (line)
-- expected arrival time (arrival_time)
-- current location (current_location)
-- delay (delay)
-- timestamp (timestamp).
+- line number ('Lines')
+- vehicle number ('VehicleNumber')
+- fleet number ('Brigade')
+- actual time ('Time')
+- actual longitude ('Lon')
+- actual latitude ('Lat')
+- arrival time at the next bus stop ('Time_stop')
+- longitude of the next bus stop ('Lon')
+- latitude of the next bus stop ('Lat')
+- the time in minutes required to travel from the current location to the location of the next bus stop ('duration')
+- the difference in minutes between the planned arrival time and the actual arrival time ('diff')
+- the delay in minutes, which is the difference between duration variable and diff variable ('delay').
 
 ![delays table](https://user-images.githubusercontent.com/55345644/224541258-6db83e9f-91b4-4266-9bbd-7003d050e324.png)
 
