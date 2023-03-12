@@ -36,9 +36,9 @@ Finally, the script generates a DataFrame that includes:
 - arrival time at the next bus stop ('Time_stop')
 - longitude of the next bus stop ('Lon')
 - latitude of the next bus stop ('Lat')
-- the time in minutes required to travel from the current location to the location of the next bus stop ('duration')
-- the difference in minutes between the planned arrival time and the actual arrival time ('diff')
-- the delay in minutes, which is the difference between duration variable and diff variable ('delay').
+- time in minutes required to travel from the current location to the location of the next bus stop ('duration')
+- difference in minutes between the planned arrival time and the actual arrival time ('diff')
+- delay in minutes, which is the difference between duration variable and diff variable ('delay').
 
 ![delays table](https://user-images.githubusercontent.com/55345644/224541258-6db83e9f-91b4-4266-9bbd-7003d050e324.png)
 
